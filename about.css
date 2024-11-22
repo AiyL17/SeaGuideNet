@@ -340,9 +340,10 @@ header {
   color: black;
 }
 
-.teams .items .item .inner img{
-  width: 100%;
-  height: 50%;
+.teams .items .item .inner img {
+  width: 100%;            /* Ensure images take up the full width */
+  height: 350px;          /* Set a fixed height for all images */
+  object-fit: cover;      /* Ensures images fill the space without distortion */
   margin-bottom: 16px;
   border-radius: 12px;
   position: relative;
@@ -350,7 +351,7 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-.teams .items .item .inner img:hover{
+.teams .items .item .inner img:hover {
   transform: scale(1.1);
   z-index: 2;
 }
@@ -371,7 +372,7 @@ header {
 
 .teams .items .item .inner{
   padding: 24px;
-  min-height: 360px;
+  min-height: 450px;
   margin-top: -70px;
 }
 
