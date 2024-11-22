@@ -1,0 +1,401 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  background-color: #284698;
+}
+
+/* Background image and overlay for specific container */
+.background-container {
+  position: relative;
+  background-image: url('img/reefs.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+ height: 500px;
+}
+
+.background-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 58, 138, 0.6); /* Blue overlay with 60% opacity */
+  z-index: 1; /* Overlay appears behind content */
+}
+
+/* Ensure header and main content appear above the overlay */
+header, .mcon, .center-nav, .logo, .right-buttons, .right-buttons a {
+  position: relative;
+  z-index: 2;
+}
+
+/* Header and navigation styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+/* Center navigation styles */
+
+.center-nav {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  border-radius: 50px;
+  margin-left: 220px; /*changes*/
+  margin-right: 15px;
+  gap: 30px;
+}
+
+.center-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px; /*changes*/
+  position: relative; /* required for ::before */
+}
+
+.center-nav a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* adjust if needed */
+  left: 0;
+  width: 0;
+  height: 2px;  
+  transition: width 0.3s ease; /* smooth transition */
+}
+
+.center-nav a:hover::before {
+  width: 100%; /* expands the line from left to right */
+  
+}
+
+.center-nav a::after{
+  content: "";
+  position: absolute;
+  background-color: #007bff;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.center-nav a:hover{
+  color: white;
+}
+
+.center-nav a:hover::after{
+  width: 100%;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.logo img {
+  width: 140px;
+  height: 80px;
+  margin-right: 100;
+}
+
+.logo span {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: -20px;
+}
+
+/* Right buttons */
+.right-buttons {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-right: 30px;
+}
+
+.right-buttons a.join-us {
+  color: rgb(214, 214, 214);
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.right-buttons a.join-us:hover {
+  color: white;
+}
+
+.right-buttons a.go-pro {
+  padding: 8px 16px;
+  background-color: #1E3A8A;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-left: 30px;
+  margin-right: 15px;
+}
+
+.right-buttons a.go-pro:hover {
+  background-color: white;
+  color: #1E3A8A;
+  transform: scale(1.05);
+}
+
+/* Main and section content styling */
+.mcon {
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+
+.mcon h4 {
+  margin-top: 80px;
+  font-size: 50px;
+}
+
+.mcon p {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.sec-cont{
+ height: 370px;
+ margin-top: 50px;
+ background-color: #284698;
+ 
+}
+.mission{
+  text-align: center;
+  background-color: #284698;
+  color: white;
+}
+.mission h4{
+  font-size: 50px;
+  margin-top: 50px;
+}
+.mission p{
+  font-size: 18px;
+  margin-top: 25px;
+}
+.sect-mission {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #c5d9e8;
+  display: grid; /* Use grid for columns */
+  grid-template-columns: repeat(3, 1fr); /* 4 equal-width columns */
+  gap: 40px; /* Space between items */
+  margin-top: 80px;
+}
+
+.sect-mission li {
+  position: relative;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-right: 1px solid #c5d9e8; /* Vertical line on the right */
+}
+.sect-mission li:last-child {
+  border-right: none; /* Remove the line from the last item */
+}
+
+.sect-mission li::before {
+  position: absolute;
+  margin-top: 5px;
+  left: 0;
+  top: 0;
+  background-color: #ffffff; /* White circle background */
+  width: 24px; /* Circle size */
+  height: 24px;
+  border-radius: 50%; /* Makes it circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Styling for the text above each list item */
+.impact-title {
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Space between text and list item */
+  color: #ffffff;
+}
+
+.cta-nsd {
+  background-color:#1E3A8A;
+  height: 500px;
+  color: white;
+}
+.left {
+  float: left;
+  margin-top: 50px;
+}
+.left img{
+  width: 600px;
+  height: auto;
+  margin-left: 120px;
+  border-radius: 25px;
+}
+.right {
+  float: right;
+  margin-top: -350px;
+  margin-right: 150px;
+  margin-left: 550px;
+}
+.right h4{
+  font-size: 50px;
+  margin-top: 10px;
+}
+.right p{
+  margin-top: 20px;
+}
+
+.right-button {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adds spacing between button and link */
+  margin-top: 50px;
+}
+
+.right-button button {
+  background-color: #ffffff; /* White background */
+  color: #0047AB; /* Dark blue text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.right-button button:hover {
+  background-color: #7e96d8;
+  color: white; /* Blue text color on hover */
+  transform: scale(1.05); /* Slightly increase size */
+}
+
+.right-button a {
+  color: rgb(221, 221, 221);
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.5s ease;
+}
+
+.right-button a:hover {
+  color: #ffffff;
+  transform: scale(1.05); /* Slightly increase size */
+}
+
+.team-con{
+  margin-top: -30px;
+  background-color: white;
+  height: 1020px;
+}
+
+.teams{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.teams > h2{
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: 1000px;
+  color: black;
+}
+
+.teams > h4{
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 10px;
+  color: black;
+}
+
+.teams .items .item .inner img{
+  width: 100%;
+  height: 50%;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  position: relative;
+  border: 3px solid #257180;
+  transition: all 0.3s ease-in-out;
+}
+
+.teams .items .item .inner img:hover{
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.teams .items{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.teams .items .item{
+  width: 26%;
+  border: 1px solid #0047AB;;
+  background: #0047AB;;
+  padding: 0 0 30px;
+}
+
+.teams .items .item .inner{
+  padding: 24px;
+  min-height: 360px;
+  margin-top: -70px;
+}
+
+.teams .items .item .inner a{
+  font-size: 18px;
+  color: white;
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold
+}
+
+.teams .items .item .inner h4{
+  margin-bottom: 15px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.teams .items .item .inner p{
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 50px;
+}
+

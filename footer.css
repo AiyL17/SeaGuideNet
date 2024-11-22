@@ -1,0 +1,197 @@
+/* Footer Container */
+.site-footer {
+  background-color: #0047AB;
+  color: #fff;
+  padding: 40px 20px;
+  margin-top: 2px;
+}
+
+/* Footer Top Section */
+.footer-top-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px; /* Adjust gap between items */
+}
+
+/* Footer Logo */
+.footer-logo-img {
+  flex: 1;
+  min-width: 220px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo-img img {
+  width: 300px;
+  height: auto;
+  margin-left: 25px;
+}
+
+.footer-logo-img p {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 45px;
+  text-align: center;
+}
+
+/* Footer Links */
+.footer-links-section {
+  flex: 1;
+  min-width: 150px;
+  margin-left: 70px;
+  margin-top: 40px;
+}
+
+.footer-links-section h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  margin-left: 40px;
+}
+
+.footer-links-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links-section li {
+  margin-bottom: 8px;
+  margin-left: 40px;
+}
+
+.footer-links-section a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Footer Newsletter Section */
+.footer-newsletter-sect {
+  flex: 1;
+  margin-top: 40px;
+  margin-right: 50px;
+}
+
+.footer-newsletter-sect h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.footer-newsletter-sect p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.footer-newsletter-sect form {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+/* Specific styling for the new email placeholder */
+.footer-newsletter-sect .email-placeholder {
+  display: inline-block;
+  padding: 10px;
+  background-color: #f0f0f0; /* Light gray background for placeholder */
+  border: 1px solid #ccc; /* Border similar to input fields */
+  border-radius: 5px 0 0 5px;
+  color: #7a7979; /* Dark text for better readability */
+  font-size: 14px;
+  margin-right: -5px; /* Slight adjustment to align with the send action */
+  width: 220px;
+}
+
+/* Specific styling for the new send action */
+.footer-newsletter-sect .send-action {
+  display: inline-block;
+  padding: 10px 12px;
+  background-color: #0047AB; /* SeaGuide blue for the button */
+  border: 1px solid white;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  margin-left: -5px; /* Ensure alignment with placeholder */
+  float: right;
+  margin-top: -50px;
+  margin-left: 220px;
+}
+
+.footer-newsletter-sect .send-action i {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+
+/* Footer Bottom Section */
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+/* Footer Hours */
+.hours-sect {
+  margin-top: 0px;
+  float: right;
+  margin-right: 130px;
+  display: flex; /* Align h4 and p together in a column with icon */
+  align-items: center;
+}
+
+.hours-sect i {
+  font-size: 50px; /* Adjust icon size to encompass both text */
+  margin-right: 20px; /* Space between icon and text */
+}
+
+.hours-sect h4,
+.hours-sect p {
+  margin: 0; /* Remove margin to ensure no unwanted gaps */
+  font-size: 18px; /* Adjust font size for text */
+  margin-right: 25px;
+}
+
+.hours-sect h4 {
+  display: inline-flex;
+  align-items: center;
+}
+
+.hours-sect p {
+  margin-top: 5px; /* Small space between h4 and p */
+}
+
+/* Footer Contacts */
+.contacts-sect {
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.contacts-sect h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.contacts-sect p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: flex; /* Align icon and text in a row */
+  align-items: center; /* Center the icon and text vertically */
+}
+
+.contacts-sect i {
+  font-size: 18px; /* Icon size to match the paragraph text size */
+  margin-right: 8px; /* Space between icon and text */
+}
+
+/* Footer Reserved Section */
+.reserved-sect {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.reserved-sect p {
+  font-size: 12px;
+  margin-top: 3%;
+}

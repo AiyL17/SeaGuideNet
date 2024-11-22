@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.join {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    height: 100vh;
+    background-color: #1d447b;
+}
+
+.head-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.head-logo img {
+    width: 200px; /* Smaller size for the logo */
+    height: auto;
+    margin-top: 10px;
+}
+
+.head-logo h2 {
+    font-size: 24px;
+    color: #0047AB;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.signup-container {
+    display: flex;
+    width: 80%;
+    height: 90vh;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form {
+    background-color: #ffffff;
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.signup-form fieldset {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.signup-form legend {
+    font-size: 22px;
+    color: #0047AB;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.signup-form p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.signup-form label {
+    font-size: 14px;
+    color: #0047AB;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.signup-form button {
+    width: 100%;
+    padding: 12px;
+    color: #ffffff;
+    border: 1px solid #00337A;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.sign button{
+    background-color: #00337A;
+}
+
+.signup-form button:hover {
+    background-color: #00337A;
+}
+
+.signup-image {
+    width: 50%;
+    overflow: hidden;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.signup-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.divider {
+    text-align: center;
+    color: #999;
+    margin: 20px 0;
+}
+
+
+.social-signup {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Social Button Styling */
+.social-button {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #083b83; /* Blue border */
+    background-color: #ffffff; /* White background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.social-button:hover {
+    background-color: #f0f0f0; /* Light grey background on hover */
+    border-color: #00337A; /* Darker blue border on hover */
+}
+.social-signup .social-button:hover {
+    background-color: #b4d1f9;
+}
+
+.social-button img {
+    width: 24px; /* Adjust icon size */
+    height: 24px;
+    object-fit: contain; /* Ensure icons scale properly */
+}
+
+.social-button i {
+    font-size: 20px;
+    color: #0047AB; /* Color of icon inside the button */
+}
+
+/* Optional: Styling for social signup divider */
+.divider {
+    text-align: center;
+    color: #999;
+    margin: 20px 0;
+}
+
+.signin-link {
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+}
+
+.signin-link a {
+    color: #0047AB;
+    text-decoration: none;
+}
+.sa a:hover{
+    text-decoration: underline;
+}
