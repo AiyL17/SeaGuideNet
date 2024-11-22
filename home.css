@@ -189,6 +189,10 @@ main {
   margin-left: 38px;
 }
 
+.oks hr {
+  width: 550px;
+}
+
 .content h1 {
   font-size: 65px;
   font-weight: bold;
@@ -511,67 +515,74 @@ margin-bottom: 5px;
   
   /* Set up a grid for insight cards */
   .insight-cards-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
-      gap: 20px; /* Consistent spacing between items */
-      justify-items: center;
-      margin-left: 2%;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-  }
-  
-  .insight-card {
-      text-align: left;
-      max-width:280px;
-      margin-right: 150px;
-      text-align: left;
-      align-items: center;
-      justify-content: center;
-   
-  }
-  
-  .insight-card img {
-      max-width: 150%; /* Full width within the card */
-      height: 400px;
-      width: 500px;
-      border-radius: 10px;
-      transition: all 0.3s ease;
-  }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Wider columns */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    background: rgba(255, 255, 255, 0.6); /* Semi-transparent container */
+    border-radius: 15px; /* Rounded edges for the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    backdrop-filter: blur(5px); /* Optional: Blur background under the container */
+}
 
-  .insight-card img:hover {
-    transform: scale(1.05); /* Slightly increase size on hover */
-  }
-  
-  .insight-card h4 {
-      font-size: 15px;
-      margin-bottom: 20px;
-      margin-left: 110px;
-      text-align: left;
-      color: #133E87;
-  }
-  .insight-card h3{
+.insight-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the cards */
+    overflow: hidden;
     text-align: left;
-    margin-bottom: 8%;
-  }
-  
-  .insight-card p {
-      font-size: 14px;
-      margin-bottom: 15px;
-      text-align: left;
-      margin-top: 10px;
-  }
-  
-  .insight-card a {
-      color: #007bff;
-      text-decoration: none;
-      text-align: left;
-      transition: all 0.3s ease;
-  }
-  .insight-card a:hover{
-    color: white;
-   
-  }
+    padding: 20px;
+    width: 100%; /* Full width in the grid */
+    max-width: 400px; /* Increased card width */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.insight-card img {
+    width: 100%; /* Full width within the card */
+    height: 300px; /* Increased height */
+    object-fit: cover; /* Prevent distortion */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.insight-card img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.insight-card h4 {
+    font-size: 18px; /* Larger font size */
+    color: #133E87;
+    margin-bottom: 10px;
+}
+
+.insight-card h3 {
+    font-size: 20px; /* Increased font size for headlines */
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.insight-card p {
+    font-size: 16px; /* Larger text for better readability */
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.insight-card a {
+    font-size: 16px; /* Larger link text */
+    color: #007bff;
+    text-decoration: none;
+    margin-top: auto; /* Push link to the bottom */
+    transition: color 0.3s ease;
+}
+
+.insight-card a:hover {
+    color: #73a4d9; /* Darker blue on hover */
+}
+
 
  
   
