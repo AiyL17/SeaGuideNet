@@ -546,11 +546,11 @@ margin-bottom: 5px;
     object-fit: cover; /* Prevent distortion */
     border-radius: 8px;
     margin-bottom: 15px;
-    transition: transform 0.3s ease;
 }
 
-.insight-card img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+.insight-card:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
 }
 
 .insight-card h4 {
@@ -582,12 +582,3 @@ margin-bottom: 5px;
 .insight-card a:hover {
     color: #73a4d9; /* Darker blue on hover */
 }
-
-
- 
-  
-  
-
-  
-  
-  
