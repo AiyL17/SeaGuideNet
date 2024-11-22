@@ -323,6 +323,81 @@ header {
   }
 }
 
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.modal-content .close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.modal-content .sas {
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.modal-content #modal-origin,
+.modal-content #modal-harvest {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: left;
+  line-height: 1.6;
+}
+#seafood-modal .modal-content p {
+  margin-bottom: 15px; /* Adds space between paragraphs */
+}
+
+/* Optional: Style the modal content to make it look more organized */
+#seafood-modal .modal-content {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#seafood-modal .modal-content h3 {
+  margin-bottom: 10px; /* Add space below the title */
+}
+
+#seafood-modal .modal-content img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Add space below the image */
+}
+
+
+
 .sec-cont{
   height: 470px;
  }
