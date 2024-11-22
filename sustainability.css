@@ -236,6 +236,10 @@ header {
   gap: 10px; /* Space between search bar and button */
 }
 
+.search-bar-container {
+  position: relative;
+}
+
 #search-bar {
   padding: 8px;
   border: 1px solid #ddd;
@@ -256,8 +260,27 @@ header {
 .search-btn:hover {
   background-color: #0056b3;
   transform: scale(1.05);
-  transition: all 0.4s ease; /*changes*/
+  transition: all 0.4s ease;
 }
+
+/* Styling for clear (X) button inside the search bar */
+.clear-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #888;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  color: #f00; /* Red color when hovered */
+}
+
+
 
 .seafood-list {
   display: grid;
