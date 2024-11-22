@@ -195,3 +195,9 @@
   font-size: 12px;
   margin-top: 3%;
 }
+
+hr {
+  width: 1475px;
+  text-align: center;
+  margin-bottom: 8px;
+}
