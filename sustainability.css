@@ -394,7 +394,7 @@ header {
 .modal-content #modal-harvest {
   font-size: 14px;
   margin-top: 10px;
-  text-align: left;
+  text-align: justify;
   line-height: 1.6;
 }
 #seafood-modal .modal-content p {
